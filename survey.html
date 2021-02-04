@@ -1,0 +1,137 @@
+<!DOCTYPE=html>
+  <html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid|Lato&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-image: url(https://media.istockphoto.com/photos/closeup-of-ground-coffee-beans-texture-background-picture-id497797017?k=6&m=497797017&s=612x612&w=0&h=1h6L1jBl1LX74_LjwXD0Na1TrxY94GinzSckXQhERUc=);
+
+      }
+
+      main {
+        background-color: yellow;
+        border-radius: 7em;
+        margin: 1em 1em 1em 5em;
+        padding: 1em 1em 1em 5em;
+      }
+
+      h1 {
+        color: navy;
+        text-align: center;
+        font-size: 100px;
+        font-family: "Londrina Solid", sans-serif;
+      }
+
+      #description {
+        font-size: 20px;
+        font-family: "Lato", serif;
+        text-align: center;
+        color: navy;
+      }
+
+      p {
+        font-family: Lato, serif;
+        font-size: 14px;
+        color: navy;
+      }
+
+      #questions {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        grid-template-rows: repeat(10, 84px);
+        grid-row-gap: 21px;
+        color: yellow;
+        background-color: navy;
+        padding: 3%;
+        margin: 4%;
+        border-radius: 32em;
+        font-family: lato, serif;
+      }
+
+      #survey {
+        color: navy;
+        text-align: center;
+        align-items: center;
+      }
+    </style>
+    <title>A survey for you
+    </title>
+  </head>
+  <main>
+
+    <body id="main">
+      <header>
+        <h1 id="title"> Would you like to take a survey?</h1>
+        <p id="description">This is a survey.</p>
+      </header>
+
+      <form id="survey-form">
+        <p id="survey">
+        <div id="questions">
+          <div id="1">
+            <label id="name-label"> Name<br>
+              <input id="name" type="text" placeholder="Your Name" required></label>
+          </div>
+          <div id="2">
+            <label id="email-label">Email<br>
+              <input id="email" type="email" placeholder="Your Email" required></label>
+          </div>
+          <div id="3">
+            <label id="number-label">What's your favorite number from 1-10?<br>
+              <input id="number" type="number" placeholder="1-10" min="1" max="10" required>
+
+            </label>
+          </div>
+          <div id="4">
+            <label for="beans-yes-no"> Do you like beans?<br>
+              <input id="beansyes" type="radio" name="beans-yes-no" value="yes" checked>Yes</label>
+            <label for="beans-yes-no">
+              <input id="beansno" type="radio" name="beans-yes-no" value="no">No
+            </label>
+          </div>
+          <div id="5">
+            <label for="georgeyesno">
+              Do you like George Wendt?<br>
+              <input id="georgeyes" name="georgeyesno" type="radio" value="yes">Yes</label>
+            <label for="georgeyesno">
+              <input id="georgeno" name="georgeyesno" type="radio" value="no">No
+            </label>
+          </div>
+          <div id="6">Where's your favorite place to eat beans and watch George Wendt films?<br>
+              <label for="indoor"><input value="indoor" id="indoor" type="radio" name="indoor-outdoor"> Indoors</label>
+              <label for="outdoor"><input value="outdoor" id="outdoor" type="radio" name="indoor-outdoor"> Outdoors</label><br>
+          </div>
+
+      <div id="7">
+        <label for="fav-bean">
+          What is your favorite bean?<br></label><input type="checkbox" id="fav-bean-lima" name="lima" value="lima">Lima
+        <input type="checkbox" id="fav-bean-green" name="green" value="green">Green
+        <input type="checkbox" id="fav-bean-white" name="white" value="white">White
+        <input type="checkbox" id="fav-bean-butter" name="butter" value="butter">Butter
+      </div>
+      <div id="8">
+        <label for="movie-bean">
+          Would you like to watch a George Wendt movie while eating beans?</label><br>
+        <input type="radio" name="yes" id="movie-bean" value="yes">Yes!
+        <input type="radio" name="yes" id="movie-bean" value="yes">Indeed
+      </div>
+      <div id="9">
+        <label for="comments">Comment your favorite bean that looks like George Wendt!<br></label><textarea name="comments" id="comments"></textarea>
+      </div>
+      <div id="10"><label for="beans-and-george">Beans and George?<br>
+          <select name="beansandgeorge" id="dropdown">
+
+            <option value="beans-and-george">Beans and George</option>
+            <option value="more-beans-and-george"> More Beans and George</option>
+          </select></label>
+      </div> <button id="submit">Submit</button>
+      </div>
+
+      </p>
+      </form>
+    </body>
+  </main>
+
+  </html>
