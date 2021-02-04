@@ -1,0 +1,376 @@
+<!DOCTYPE=html>
+
+  <head>
+    <title>Conspiracy Dice</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Oswald" rel="stylesheet" type="text/css">
+    <style>
+      @media screen and (min-width: 480px) {
+        #header-image {
+          float: top;
+        }
+
+        #ol {
+          float: bottom;
+        }
+      }
+
+      body {
+
+        background-image: url(https://cdna.lystit.com/photos/b162-2015/10/27/missguided-black-premium-feather-skirt-plunge-dress-black-product-0-846455660-normal.jpeg);
+        background-size: 300px;
+      }
+
+      @keyframes color {
+        100% {
+          color: #FF0000;
+        }
+      }
+
+      a:hover {
+        background-color: black;
+        color: #FF0000;
+        animation-name: color;
+        animation-duration: 1s;
+      }
+
+      li:hover {
+        background-color: black;
+        color: #FF0000;
+        animation-name: color;
+        animation-duration: 1s;
+      }
+
+      header {
+        background-color: #FF0000;
+        height: 7em;
+        position: fixed;
+        top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border: 1px solid white;
+      }
+
+
+      .head-nav {
+        width: 100%;
+      }
+
+      .head-nav a {
+        font-family: Oswald;
+        color: white;
+        display: block;
+      }
+
+      #header-img {
+        max-height: 7em;
+        width: auto;
+        float: left;
+      }
+
+      ol {
+        list-style-type: none;
+      }
+
+      li {
+
+        display: inline;
+        float: right;
+        right: 0;
+        top: 50%;
+        padding: 7px;
+        margin: 3em;
+      }
+
+      .container {
+        border: 50px solid transparent;
+        border-image: repeating-linear-gradient(90deg, #00004D, #000000, #000057 120px) 60;
+        display: grid;
+        margin-top: 7em;
+        background-color: #800000;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+        grid-template-rows: 20em 370px 1fr 100px .90fr .5fr;
+        grid-gap: 20px;
+
+      }
+
+      .i1 {
+        max-width: 2fr;
+        height: auto;
+        align-self: center;
+        grid-area: 3/1/4/2;
+        justify-self: center;
+        padding: 20px;
+      }
+
+      .i2 {
+        max-width: 2fr;
+        height: auto;
+        grid-area: 3/5/4/6;
+        align-self: center;
+        justify-self: center;
+        padding: 20px;
+      }
+
+      h1 {
+        font-family: Kaushan Script;
+        color: white;
+        font-size: 70px;
+        text-shadow: black 1px 0 10px;
+      }
+
+      h1:hover {
+        animation-name: color;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
+      }
+
+      h2 {
+        font-family: Kaushan Script;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: white 1px 0 10px;
+
+      }
+
+      h4 {
+        font-family: Kaushan Script;
+        color: white;
+        font-size: 30px;
+        text-shadow: red 1px 0 10px;
+      }
+
+      h3 {
+        font-family: Kaushan Script;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      p {
+        font-family: Oswald;
+        color: white;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .c1 {
+        border-color: white;
+        border-width: 10px;
+        border-style: outset none;
+        justify-self: center;
+        grid-area: 1/1/2/6;
+        text-align: center;
+      }
+
+      .video_div {
+        border-color: white;
+        border-width: 10px;
+        border-style: none outset;
+        justify-self: center;
+        align-self: center;
+        grid-area: 2/2/3/5;
+        text-align: center;
+        padding: 0 100px 0 100px;
+      }
+
+      .c2 {
+        border-color: white;
+        border-width: 10px;
+        border-style: outset none outset none;
+        align-self: center;
+        justify-self: center;
+        grid-area: 3/2/4/5;
+        text-align: center;
+        padding: 40px 20px 20px 20px;
+        margin: 5px;
+      }
+
+      .pricing {
+        grid-area: 4/3/5/4;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .p1 {
+        background-color: black;
+        grid-area: 5/2/6/3;
+        display: grid;
+        grid-template-rows: 25% 25% 50%;
+        border: 1px solid white;
+        margin: 40px;
+      }
+
+      .p2 {
+        background-color: black;
+        grid-area: 5/3/6/4;
+        display: grid;
+        grid-template-rows: 25% 25% 50%;
+        border: 1px solid white;
+        margin: 40px;
+      }
+
+      .p3 {
+        background-color: black;
+        grid-area: 5/4/6/5;
+        display: grid;
+        grid-template-rows: 25% 25% 50%;
+        border: 1px solid white;
+        margin: 40px;
+      }
+
+      .a1 {
+        background-color: #FF0000;
+        float: start;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .b1 {
+        background-color: #FF0000;
+        float: start;
+        justify-content: center;
+        align-content: center;
+
+      }
+
+      .d1 {
+        background-color: #FF0000;
+        float: start;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .a2 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .b2 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .d2 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .a3 {
+        text-align: center;
+        font-family: Kaushan Script;
+        font-size: 60px;
+      }
+
+      .b3 {
+        text-align: center;
+        font-family: Kaushan Script;
+        font-size: 60px;
+      }
+
+      .d3 {
+        text-align: center;
+        font-family: Kaushan Script;
+        font-size: 60px;
+      }
+
+      .footer {
+        padding: 1em;
+        margin: 1em;
+        border-width: 1em 1em 1em 1em;
+        border-style: outset;
+        border-color: white;
+        background-color: #FF0000;
+        align-self: end;
+        grid-area: 6/2/7/5;
+      }
+
+      .footer a {
+        font-family: Oswald;
+        color: white;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="head-nav" id="head-nav">
+      <header id="header">
+        <img id="header-img" src="https://i.imgur.com/1YpwDJ8.png" alt="company logo">
+        <nav id="nav-bar">
+          <ol>
+            <li class="nav-link" a href="#contact-us">Contact Us</li>
+            <li class="nav-link" a href="#why-buy">Why Buy?</li>
+            <li class="nav-link" a href="#pricing">Pricing</li>
+           
+          </ol>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <div class="c1">
+        <h1>Handmade and inked custom dice</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" type="email" id="email" placeholder="Enter your email!"><input button id="submit" type="submit">
+        </form>
+      </div>
+      <div class="video_div" id="video_div">
+        <iframe class="video" id="video" width="560" height="315" src="https://www.youtube.com/embed/_f6Gs4NWz0M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <p id="caption" class="caption">A DnD video for a setting you'd need dice for!</p>
+      </div>
+      <div class="i1" id="image-1">
+        <img src="https://i.imgur.com/2wrDRUr.jpg" alt="A picture of dice">
+      </div>
+      <div class="i2" id="image-2">
+        <img src="https://i.imgur.com/3DFDuNM.png" alt="Another picture of dice">
+      </div>
+      <div id="c2" class="c2">
+        <section id="why-buy" class="why-buy">
+          <h2>Why Buy?</h2>
+          <h4>One of a kind</h4>
+          <p>You'll never see another set quite like yours</p>
+          <h4>Tested for randomness</h4>
+          <p>Unless you specifically order different materials, all dice will be uniform for true random rolling</p>
+          <h4>Customize your game</h4>
+          <p id="butt">Order a set of dice as unique as your character, or go with the set that matches your edgy tiefling warlock</p>
+        </section>
+      </div>
+      <section id="pricing" class="pricing">
+        <h2>Pricing</h2>
+      </section>
+      <div id="p1" class="p1">
+        <h3 class="d1">7 Dice Set</h3>
+        <p class="d2">Includes a D20, D12, D10, D100, D8, D6, D4</p>
+        <p class="d3">$15</p>
+      </div>
+      <div class="p2">
+        <h3 class="b1">Chameleon Set</h3>
+        <p class="b2" id="b2">Upgrade your set to premium mica colors for a low price</p>
+        <p class="b3">+$3</p>
+      </div>
+      <div class="p3">
+        <h3 class="a1">Jumbo D20</h3>
+        <p class="a2">Upgrade your set with a jumbo D20 in matching colors</p>
+        <p class="a3">+$2
+        </p>
+      </div>
+
+      <div class="footer" id="footer">
+        <section class="contact-us" id="contact-us">
+          <h2>Contact us!</h2>
+          <ol>
+            <li><a href="#a1">Privacy</a></li>
+            <li><a href="#a2">Terms</a></li>
+            <li><a href="#a3">Contact</a></li>
+          </ol>
+          <p>&copy 2021 Conspiracy Dice</p>
+        </section>
+      </div>
+
+    </div>
+  </body>
